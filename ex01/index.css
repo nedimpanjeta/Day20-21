@@ -1,0 +1,215 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  color: #000000;
+  text-align: center;
+}
+.wrapper {
+  text-align: center;
+  height: fit-content;
+}
+
+#text_area {
+  resize: none;
+  width: 90%;
+  max-width: 790px;
+  height: 200px;
+  font-size: 1.2em;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(86, 123, 224);
+  box-shadow: 1px 0.5px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(352deg, rgba(255, 255, 255) 10%, rgb(201, 222, 253) 130%);
+}
+#text_area:focus {
+  outline: none;
+}
+
+.key {
+  font-weight: 600;
+  font-size: 1em;
+  color: #ffffff;
+  background: #000000;
+  border: none;
+  user-select: none;
+  box-shadow: 1px 1px 1px 1px #000000;
+}
+.key:focus {
+  outline: none;
+}
+.key:active {
+  background: #000000;
+}
+
+/** KLASE ZA IMPORT KROZ JAVASCRIPT */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* *** GRID *** */
+.keys {
+  box-sizing: border-box;
+  width: 95%;
+  margin: auto;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(12 1fr);
+  grid-template-rows: 45px 45px 45px 45px 45px;
+  grid-gap: 2.5px;
+}
+
+#n1,
+#n2,
+#n3,
+#n4,
+#n5,
+#n6,
+#n7,
+#n8,
+#n9,
+#n0 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#q,
+#w,
+#e,
+#r,
+#t,
+#y,
+#u,
+#i,
+#o,
+#p {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#a,
+#s,
+#d,
+#f,
+#g,
+#h,
+#j,
+#k,
+#l,
+#caps {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+#z,
+#x,
+#c,
+#v,
+#b,
+#n,
+#m,
+#povlaka,
+#donja,
+#shift {
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+#space,
+#ok {
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+#n1,
+#q,
+#a,
+#z {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#n2,
+#w,
+#s,
+#x {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+#n3,
+#e,
+#d,
+#c {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+#n4,
+#r,
+#f,
+#v {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+#n5,
+#t,
+#g,
+#b {
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+#n6,
+#y,
+#h,
+#n {
+  grid-column-start: 6;
+  grid-column-end: 7;
+}
+
+#n7,
+#u,
+#j,
+#m {
+  grid-column-start: 7;
+  grid-column-end: 8;
+}
+#n8,
+#i,
+#k,
+#povlaka {
+  grid-column-start: 8;
+  grid-column-end: 9;
+}
+#n9,
+#o,
+#l,
+#donja {
+  grid-column-start: 9;
+  grid-column-end: 10;
+}
+
+#n0,
+#p {
+  grid-column-start: 10;
+  grid-column-end: 11;
+}
+
+#shift,
+#caps,
+#ok {
+  grid-column-start: 10;
+  grid-column-end: 13;
+}
+
+#backspace {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 11;
+  grid-column-end: 13;
+}
+
+#enter {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 11;
+  grid-column-end: 13;
+}
+
+#space {
+  grid-column-start: 1;
+  grid-column-end: 10;
+}
